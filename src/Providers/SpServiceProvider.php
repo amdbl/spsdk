@@ -2,7 +2,7 @@
 namespace Amdbl\Sp\Providers;
 use Amdbl\Sp\SpLib;
 use Illuminate\Support\ServiceProvider;
-class PermitServiceProvider extends ServiceProvider
+class SpServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
