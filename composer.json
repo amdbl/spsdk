@@ -9,5 +9,10 @@
     "require": {
         "php": ">=7.1",
         "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amdbl\\Sp\\": "src/"
+        }
     }
 }
