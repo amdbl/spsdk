@@ -1,7 +1,10 @@
 <?php
+
 namespace Amdbl\Sp\Providers;
-use Amdbl\Sp\SpLib;
+
+use Amdbl\Sp\Splayer;
 use Illuminate\Support\ServiceProvider;
+
 class SpServiceProvider extends ServiceProvider
 {
     /**
@@ -17,6 +20,7 @@ class SpServiceProvider extends ServiceProvider
         ]);
         $this->mergeConfigFrom($confPath, 'splayer');
     }
+
     /**
      * Register the application services.
      *
@@ -24,8 +28,8 @@ class SpServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('amdbl.sp', function ($app) {
-            return new SpLib();
+        $this->app->singleton('amdbl.splayer', function ($app) {
+            return new Splayer();
         });
     }
 

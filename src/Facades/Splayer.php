@@ -4,13 +4,12 @@ namespace Amdbl\Sp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-
 /**
- * @method static array permit(string $pmtCode,bool $isW)
- * @method static array ticket2Session(string $ticket)
- * @method static array publish()
+ * @method static array authUserInfo(string $token)
+ * @method static array authUserRequest($request)
+ * @method static array redirectBack()
  */
-class Sp extends Facade
+class Splayer extends Facade
 {
     /**
      * Get the binding in the IoC container
@@ -19,7 +18,7 @@ class Sp extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'amdbl.sp';
+        return 'amdbl.splayer';
     }
 
 }
