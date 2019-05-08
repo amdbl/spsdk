@@ -1,0 +1,13 @@
+{
+    "name": "amdbl/spsdk",
+    "authors": [
+        {
+            "name": "amdbl",
+            "email": "amdbl@gmal.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.6"
+    }
+}
