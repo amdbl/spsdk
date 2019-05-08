@@ -1,6 +1,6 @@
 <?php
 
-namespace Lucia\Permission\Facades;
+namespace Amdbl\Sp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
