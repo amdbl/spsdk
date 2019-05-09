@@ -14,5 +14,15 @@
         "psr-4": {
             "Amdbl\\Sp\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amdbl\\Sp\\Providers\\SpServiceProvider"
+            ],
+            "aliases": {
+                "Splayer": "Amdbl\\Sp\\Facade\\Splayer"
+            }
+        }
     }
 }
